@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jeremiah Hass | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+      <h1>Jeremiah Hass</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="container">
+      <h2>Hello, I'm Jeremiah Hass 👋</h2>
+      <p>Web Developer | IT Support Specialist for budget watchers |  IT help desk for Blue Paladin |  Also an roblox Developer working on SLC-12 And SLC-09</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I’m a passionate developer with a love for creating responsive and user-friendly websites. I specialize in front-end development, and I’m constantly learning new tools and technologies.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Abandoned SCI ALPHA II and Left the Roblox Project</h3>
+          <p>SCI ALPHA II was something I invested over 10 years of my time and effort into. I was the Project Lead—this wasn’t just a side project for me. I put in the work, managing most of the development team and helping shape the entire foundation of what it was supposed to become. It was a huge part of my creative life, built inside the Roblox platform and tied heavily to the SCPF community.
+But as time went on, things started falling apart—not because of the vision or the tech, but because of people.
+The SCPF community became incredibly toxic. Developers I trusted started overstepping my role, making decisions behind my back, pushing their own agendas, and ignoring the structure we had in place. It became harder and harder to lead when the people around me were more focused on control and ego than on actually building something meaningful.
+Even worse, the HR and MR (High Rank and Management Rank) command teams weren’t doing their jobs. They didn’t hold people accountable. Leadership became a mess. Responsibilities were ignored. When problems came up, no one stepped in to fix them. I found myself cleaning up after others while watching the structure I worked so hard to build slowly collapse.
+Eventually, I realized I was burning myself out trying to hold together something that no longer respected my position or the effort I gave it. There was no point continuing a project when the environment around it was draining, disrespectful, and broken from the inside out.
+So I made the decision to abandon SCI ALPHA II. I left the game, left the project, and walked away. It wasn’t easy—putting 10 years into something and walking away hurts. But it was the right choice for my own peace of mind.
+I may revisit what SCI ALPHA II could’ve been someday, in a better place with better people. But for now, it's over. Not because I gave up—but because the community and leadership made it impossible to continue with the integrity I started with.</p>
+        </div>
+        <div class="SLC-09">
+          <h3>SLC-09: Iron Warden</h3>
+          <p>SLC-09, known as Iron Warden, is the central command and containment facility for Singularity Labs Corporation. Built deep underground with reinforced containment chambers, it houses several high-priority anomalies. The facility is overseen by CASIA (Command and Support Integrated Assistant), an advanced artificial intelligence responsible for threat monitoring, internal management, and security coordination.
+This site is the organization’s flagship facility for secure anomaly research, command operations, and high-level personnel deployment.
+Current Goals
+Expand and refine the AI management system (CASIA)
+Document and archive active anomalies into a secure database
+Improve breach response systems and lockdown automation
+Collaborate with external and classified installations for coordinated research.</p>
+        </div>
+               <div class="SLC-12">
+          <h3>SLC-12: Wraith Glacier</h3>
+          <p>SLC-12: Wraith Glacier is the first and oldest facility established by what would become the Singularity Labs Corporation. Built beneath a remote arctic glacier, this site marked the birth of the SLC initiative, originally conceived as a black-site research outpost focused on deep-climate testing and experimental technologies.
+Over time, seismic instability and unknown environmental factors led to partial collapse and containment failure, forcing the facility into quarantine. However, Wraith Glacier remains a critical piece of SLC history—housing dormant systems, experimental prototypes, and secrets linked to the early formation of the Corporation.
+Legacy:
+SLC-12 is not just a research station—it's the origin point of the entire SLC universe. Every discovery, protocol, and division traces its lineage back to this icy frontier.</p>
+        <!-- Add more cards as needed -->
+                 </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Jeremiah Hass. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+  const toggleSwitch = document.getElementById('checkbox');
+  const currentTheme = localStorage.getItem('theme');
+
+  if (currentTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    toggleSwitch.checked = true;
+  }
+
+  toggleSwitch.addEventListener('change', function () {
+    if (this.checked) {
+      document.body.classList.add('dark-mode');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.body.classList.remove('dark-mode');
+      localStorage.setItem('theme', 'light');
+    }
+  });
+</script>
+
+</body>
+
+
+</html>
