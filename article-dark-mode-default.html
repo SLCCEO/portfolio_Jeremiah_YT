@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why I Switched to Dark Mode by Default | Jeremiah Hass</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="article-page">
+  <header>
+    <div class="container">
+      <h1>Jeremiah Hass</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="article-container">
+    <div class="container">
+      <article class="article-card">
+        <h2>Why I Switched to Dark Mode by Default</h2>
+        <p class="article-meta"><em>Published June 2025</em></p>
+
+        <p>
+          For a long time, I kept my website in a traditional light mode. But as I developed more user-focused designs, I realized that starting with dark mode offers better accessibility, energy savings, and modern appeal — especially for developers and tech audiences.
+        </p>
+
+        <h3>🧠 Better for the Eyes</h3>
+        <p>
+          Dark mode significantly reduces eye strain, especially in low-light environments. For many developers who browse or code late into the night, a darker interface is simply more comfortable.
+        </p>
+
+        <h3>🔋 Energy Efficiency</h3>
+        <p>
+          On OLED and AMOLED screens, dark mode can save battery life by reducing the number of pixels actively emitting light. It's a subtle touch, but one that makes a real-world difference.
+        </p>
+
+        <h3>🎨 Modern Look & Feel</h3>
+        <p>
+          Many users now expect dark mode support. Platforms like GitHub, Discord, VS Code, and macOS have helped normalize it as a default. So I decided my site should match that modern design language.
+        </p>
+
+        <h3>⚙️ How I Did It</h3>
+        <p>
+          I created a <code>.dark-mode</code> class that changes background and text color variables. A JavaScript toggle stores the preference in <code>localStorage</code>, allowing users to switch themes easily.
+        </p>
+        <pre><code>if (localStorage.getItem("theme") === "dark") {
+  document.body.classList.add("dark-mode");
+}</code></pre>
+
+        <h3>🧩 Still Support Light Mode</h3>
+        <p>
+          Of course, accessibility includes <em>choices</em>. That's why I kept a light mode fallback and a toggle. It’s not about choosing one side — it’s about offering the best experience for everyone.
+        </p>
+
+        <h3>✅ Final Thoughts</h3>
+        <p>
+          Switching to dark mode as default wasn't just an aesthetic decision — it was a user-first one. I encourage you to explore your own preferences and offer flexible options in your own designs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Jeremiah Hass. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const theme = localStorage.getItem("theme");
+    if (theme === "dark") {
+      document.body.classList.add("dark-mode");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top 5 CSS Tricks for Beginners | Jeremiah Hass</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="article-page">
+  <header>
+    <div class="container">
+      <h1>Jeremiah Hass</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="article-container">
+    <div class="container">
+      <article class="article-card">
+        <h2>Top 5 CSS Tricks for Beginners</h2>
+        <p class="article-meta"><em>Published June 2025</em></p>
+
+        <p>Learning CSS can feel overwhelming at first — but once you know a few clever tricks, your designs will improve dramatically. Here are five beginner-friendly tips I wish I knew sooner:</p>
+
+        <h3>🎯 1. Use CSS Variables for Theme Management</h3>
+        <p>Instead of hardcoding colors, use variables for consistency and theme switching.</p>
+        <pre><code>:root {
+  --primary-color: #3498db;
+  --text-color: #333;
+}</code></pre>
+
+        <h3>📏 2. Master Flexbox for Layouts</h3>
+        <p>Flexbox makes it easy to align and distribute elements. This is a powerful layout tool every beginner should learn.</p>
+        <pre><code>.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}</code></pre>
+
+        <h3>🎨 3. Center Anything with Flexbox</h3>
+        <p>Yes, it’s that simple. You can center text, divs, or entire sections using just two lines of CSS:</p>
+        <pre><code>.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}</code></pre>
+
+        <h3>📱 4. Use `clamp()` for Responsive Font Sizes</h3>
+        <p>The `clamp()` function makes your typography scale based on screen size — no media queries needed.</p>
+        <pre><code>h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}</code></pre>
+
+        <h3>🌗 5. Create Light/Dark Mode with a Class</h3>
+        <p>Toggle a class on your body, and use variables to change your site’s theme dynamically.</p>
+        <pre><code>body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+}</code></pre>
+
+        <h3>✅ Final Thoughts</h3>
+        <p>These CSS techniques can greatly improve your design workflow and make your websites more professional. Try implementing one or two into your current project — you’ll notice the difference!</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Jeremiah Hass. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Apply dark mode from localStorage
+    const theme = localStorage.getItem("theme");
+    if (theme === "dark") {
+      document.body.classList.add("dark-mode");
+    }
+  </script>
+</body>
+</html>

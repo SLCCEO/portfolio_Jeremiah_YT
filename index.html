@@ -8,13 +8,15 @@
 </head>
 <body>
       <h1>Jeremiah Hass</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#projects">Projects</a></li>
+    <li><a href="skills.html" class="active">Skills</a></li> <!-- ✅ -->
+    <li><a href="articles.html">Articles</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
     </div>
   </header>
 
@@ -33,9 +35,38 @@
     </div>
   </section>
 
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    
+    <div class="project-filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="Abandoned Project">Abandoned Project</button>
+      <button class="filter-btn" data-category="Roblox Game">Roblox Game</button>
+      <button class="filter-btn" data-category="Active project">Active project</button>
+    </div>
+
+    <div class="projects-grid">
+      <div class="project-card" data-category="Abandoned Project">
+        <h3>Abandoned Project</h3>
+        <p>Built with HTML, CSS, and JavaScript. Fully responsive and interactive.</p>
+      </div>
+      <div class="project-card" data-category="Roblox Game">
+        <h3>Roblox project</h3>
+        <p>Roblox Game.</p>
+      </div>
+      <div class="project-card" data-category="Active project">
+        <h3>Active Projects</h3>
+        <p>A simple task manager app using vanilla JavaScript and localStorage.</p>
+      </div>
+      <!-- Add more cards and categories -->
+    </div>
+  </div>
+</section>
   <section id="projects">
     <div class="container">
       <h2>Projects</h2>
+      
       <div class="projects-grid">
         <div class="project-card">
           <h3>Abandoned SCI ALPHA II and Left the Roblox Project</h3>
@@ -46,8 +77,12 @@ Even worse, the HR and MR (High Rank and Management Rank) command teams weren’
 Eventually, I realized I was burning myself out trying to hold together something that no longer respected my position or the effort I gave it. There was no point continuing a project when the environment around it was draining, disrespectful, and broken from the inside out.
 So I made the decision to abandon SCI ALPHA II. I left the game, left the project, and walked away. It wasn’t easy—putting 10 years into something and walking away hurts. But it was the right choice for my own peace of mind.
 I may revisit what SCI ALPHA II could’ve been someday, in a better place with better people. But for now, it's over. Not because I gave up—but because the community and leadership made it impossible to continue with the integrity I started with.</p>
-        </div>
-        <div class="SLC-09">
+    
+
+<div class="project-card" data-category="Active project">
+        <h3>Active Projects</h3> 
+</div>
+        <div class="project-card">
           <h3>SLC-09: Iron Warden</h3>
           <p>SLC-09, known as Iron Warden, is the central command and containment facility for Singularity Labs Corporation. Built deep underground with reinforced containment chambers, it houses several high-priority anomalies. The facility is overseen by CASIA (Command and Support Integrated Assistant), an advanced artificial intelligence responsible for threat monitoring, internal management, and security coordination.
 This site is the organization’s flagship facility for secure anomaly research, command operations, and high-level personnel deployment.
@@ -56,8 +91,11 @@ Expand and refine the AI management system (CASIA)
 Document and archive active anomalies into a secure database
 Improve breach response systems and lockdown automation
 Collaborate with external and classified installations for coordinated research.</p>
-        </div>
-               <div class="SLC-12">
+       
+<div class="project-card" data-category="Active project">
+        <h3>Active Projects</h3> 
+</div>
+               <div class="project-card">
           <h3>SLC-12: Wraith Glacier</h3>
           <p>SLC-12: Wraith Glacier is the first and oldest facility established by what would become the Singularity Labs Corporation. Built beneath a remote arctic glacier, this site marked the birth of the SLC initiative, originally conceived as a black-site research outpost focused on deep-climate testing and experimental technologies.
 Over time, seismic instability and unknown environmental factors led to partial collapse and containment failure, forcing the facility into quarantine. However, Wraith Glacier remains a critical piece of SLC history—housing dormant systems, experimental prototypes, and secrets linked to the early formation of the Corporation.
@@ -71,16 +109,20 @@ SLC-12 is not just a research station—it's the origin point of the entire SLC 
   </section>
 
   <section id="contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
-  </section>
+  <div class="container">
+    <h2>Contact Me</h2>
+    <!-- Formspree Form -->
+    <form action="https://formspree.io/f/xjkrebwp" method="POST">
+      <label for="email">Your email:</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="message">Your message:</label>
+      <textarea name="message" id="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
 
   <footer>
     <div class="container">
@@ -107,7 +149,23 @@ SLC-12 is not just a research station—it's the origin point of the entire SLC 
   });
 </script>
 
-</body>
 
+
+
+</body>
+<section id="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Git & GitHub</li>
+      <li>Responsive Design</li>
+      <li>Figma</li>
+      <!-- Add more if needed -->
+    </ul>
+  </div>
+</section>
 
 </html>

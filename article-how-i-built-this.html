@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How I Built My Portfolio | Jeremiah Hass</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="article-page">
+  <header>
+    <div class="container">
+      <h1>Jeremiah Hass</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="article-container">
+    <div class="container">
+      <article class="article-card">
+        <h2>How I Built My Portfolio Website from Scratch</h2>
+        <p class="article-meta"><em>Published June 2025</em></p>
+
+        <p>
+          Creating my personal portfolio website was both a rewarding and educational experience. I built it using just <strong>HTML, CSS, and a little JavaScript</strong>, hosted it on <strong>GitHub Pages</strong>, and designed it to showcase my projects, skills, and articles in a clean and accessible layout.
+        </p>
+
+        <h3>🧱 Project Structure</h3>
+        <pre><code>/portfolio/
+├── index.html
+├── articles.html
+├── skills.html
+├── style.css
+└── /images/</code></pre>
+
+        <p>The homepage includes a hero section, an about summary, featured projects, and a contact form. Longer content (like articles and skills) was moved to standalone pages for clarity.</p>
+
+        <h3>🎨 Styling with CSS</h3>
+        <p>I used CSS custom properties (variables) for color theming, enabling both light and dark modes. Responsive design was achieved with flexbox, grid, and media queries.</p>
+
+        <h3>🌗 Light/Dark Mode Toggle</h3>
+        <p>I added a toggle button using JavaScript that applies a <code>dark-mode</code> class and stores the setting in <code>localStorage</code>.</p>
+
+        <h3>🗂️ Sections I Included</h3>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Projects with filters</li>
+          <li>Skills</li>
+          <li>Articles</li>
+          <li>Contact Form (via Formspree)</li>
+        </ul>
+
+        <h3>🚀 Hosting on GitHub Pages</h3>
+        <p>I version-controlled my site using Git, then deployed it through GitHub Pages in the repository settings.</p>
+
+        <h3>🛠 Tools I Used</h3>
+        <ul>
+          <li>Visual Studio Code</li>
+          <li>Git & GitHub</li>
+          <li>Formspree</li>
+          <li>Figma</li>
+        </ul>
+
+        <h3>📈 What I Learned</h3>
+        <p>This project helped me learn more about front-end dev, accessibility, modular sectioning, and deployment workflows.</p>
+
+        <h3>💡 Final Thoughts</h3>
+        <p>Whether you're new or experienced, building your own site is a great way to grow as a developer and showcase your progress.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Jeremiah Hass. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Theme persistence script -->
+  <script>
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme === 'dark') {
+      document.body.classList.add('dark-mode');
+    }
+  </script>
+</body>
+</html>
