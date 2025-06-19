@@ -1,0 +1,1 @@
+--Spireworks LLC Jeremiah I have Full ownership over This code and If anyone use it without My approval or without My ok I will issues an DMCA
